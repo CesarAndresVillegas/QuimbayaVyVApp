@@ -15,6 +15,7 @@ import {
   View,
   TouchableOpacity,
   Image,
+  Dimensions,
 } from 'react-native';
 
 class MainMenu extends Component {
@@ -107,10 +108,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#3366CC',
     marginVertical: 10,
-    padding: 15,
+    //padding: 15,
+    //marginVertical: '1%',
+    //padding: (Dimensions.get('window').height) / 12,
     borderRadius: 15,
     borderWidth: 1,
-    borderColor: 'white'
+    borderColor: 'white',
+    //width: (Dimensions.get('window').width),
+    //height: (Dimensions.get('window').height) / 12,
+    //margin: '5%',
   },
   text: {
     color: '#FFCC00',
